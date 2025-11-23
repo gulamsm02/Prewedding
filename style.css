@@ -1,0 +1,160 @@
+<style>
+    /* Style untuk keseluruhan halaman */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #FFDEE9 0%, #B5FFFC 100%); /* Warna pastel lembut */
+        color: #333;
+    }
+
+    /* Navbar */
+    nav {
+        background-color: rgba(255, 255, 255, 0.8); /* Latar belakang putih transparan */
+        padding: 15px 30px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+    }
+    nav a {
+        font-size: 16px;
+        margin-left: 25px;
+        text-decoration: none;
+        color: #6B7280;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+    nav a:hover {
+        color: #FF6B6B; /* Warna merah muda saat hover */
+    }
+
+    .container {
+        margin-top: 80px;
+    }
+
+    /* Hero Section */
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url('https://via.placeholder.com/1500') center/cover no-repeat;
+        color: white;
+        text-align: center;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+    .hero h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        animation: fadeIn 2s ease-out;
+    }
+    .hero p {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        opacity: 0;
+        animation: fadeIn 3s ease-out forwards;
+    }
+    .hero a {
+        margin-top: 20px;
+        padding: 15px 30px;
+        background-color: #FF6B6B; /* Warna tombol */
+        color: white;
+        font-size: 1.2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    .hero a:hover {
+        background-color: #FF4C4C; /* Warna tombol saat hover */
+    }
+
+    /* Animasi FadeIn untuk teks */
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    /* Tentang Kami Section */
+    #about {
+        background: #ffffff; /* Latar belakang putih */
+        padding: 50px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    #about h2 {
+        font-size: 2.5rem;
+        color: #FF6B6B; /* Warna merah muda */
+        margin-bottom: 20px;
+    }
+    #about p {
+        font-size: 1.2rem;
+        color: #6B7280;
+    }
+
+    /* Jadwal Section */
+    #schedule {
+        background-color: #F1F5F9; /* Warna latar belakang abu-abu muda */
+        padding: 50px 0;
+        text-align: center;
+    }
+    #schedule h2 {
+        font-size: 2.5rem;
+        color: #FF6B6B;
+    }
+    #schedule p {
+        font-size: 1.2rem;
+        color: #6B7280;
+        margin-top: 15px;
+    }
+
+    /* Galeri Section */
+    #gallery {
+        background: #ffffff;
+        padding: 50px 0;
+        text-align: center;
+    }
+    #gallery h2 {
+        font-size: 2.5rem;
+        color: #FF6B6B;
+    }
+    #gallery .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+    }
+    #gallery img {
+        width: 100%;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+    #gallery img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Kontak Section */
+    #contact {
+        background-color: #FFE4E1; /* Warna latar belakang merah muda lembut */
+        padding: 50px 0;
+        text-align: center;
+    }
+    #contact h2 {
+        font-size: 2.5rem;
+        color: #6B7280;
+        margin-bottom: 20px;
+    }
+    #contact p {
+        font-size: 1.2rem;
+        color: #6B7280;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #FF6B6B;
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+    }
+</style>
